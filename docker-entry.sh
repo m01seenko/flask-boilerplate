@@ -1,0 +1,6 @@
+#!/bin/sh
+
+GUNICORN_BIND=${GUNICORN_BIND:-"0.0.0.0:8000"}
+GUNICORN_WORKERS=${GUNICORN_WORKERS:-"10"}
+
+gunicorn --bind $GUNICORN_BIND --workers $GUNICORN_WORKERS wsgi:app
