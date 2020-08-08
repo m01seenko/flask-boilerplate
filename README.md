@@ -6,7 +6,7 @@ A simple boilerplate Flask application.
 
 * Python 3.6+
 
-## Building
+## Building a virtual environment
 
 ```
 git clone git@github.com:m01seenko/flask-boilerplate.git
@@ -15,4 +15,11 @@ python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 
+```
+
+## Building a docker container
+```
+git clone git@github.com:m01seenko/flask-boilerplate.git
+cd flask-boilerplate/
+docker build -t flask-boilerplate:latest .
 ```
