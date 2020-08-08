@@ -1,5 +1,7 @@
 # Flask boilerplate
 
+<p align="left"><img src="https://img.shields.io/badge/WIP-work%20in%20progress-yellow"/></p>
+
 A simple boilerplate Flask application.
 
 ## Requirements
