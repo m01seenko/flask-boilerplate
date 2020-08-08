@@ -5,6 +5,7 @@ from flask_migrate import Migrate
 from .config import config_map
 
 db = SQLAlchemy()
+migrate = Migrate()
 
 
 def create_app():
@@ -15,6 +16,6 @@ def create_app():
     app.config.from_pyfile("config.py", silent=True)
 
     db.init_app(app)
-    migrate = Migrate(app, db)  # noqa: F841
+    migrate.init_app(app, db)
 
     return app
