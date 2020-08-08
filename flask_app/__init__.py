@@ -1,6 +1,7 @@
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 from .config import config_map
 
 db = SQLAlchemy()
@@ -14,5 +15,6 @@ def create_app():
     app.config.from_pyfile("config.py", silent=True)
 
     db.init_app(app)
+    migrate = Migrate(app, db)  # noqa: F841
 
     return app
