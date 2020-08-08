@@ -58,7 +58,9 @@ cover/
 
 # Flask stuff:
 instance/*
+!instance/.gitkeep
 .webassets-cache
 
 # Environment:
 venv/*
+!venv/.gitkeep
